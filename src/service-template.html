@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind Test</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- HERO SECTION -->
+    <section class="bg-blue-800 text-white">
+      <div
+        class="container mx-auto flex flex-col lg:flex-row items-center justify-between max-w-7xl"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0"
+        >
+          <div class="flex-shrink-0 mb-6 mt-10 lg:mb-0 lg:mr-8 mt-0">
+            <img
+              src="../images/logo.png"
+              alt="Lock Up Industries Logo"
+              class="h-auto w-48 mx-auto lg:mx-0"
+            />
+          </div>
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+              Fire Door Repairs
+            </h1>
+            <p class="text-xl md:text-2xl mb-8">
+              Have a fire door that needs repairing?
+            </p>
+            <div
+              class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <a href="#" class="btn-primary">GET IN TOUCH</a>
+              <a href="tel:0418787247" class="btn-secondary"
+                >PH: 0418 787 247</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-shrink-0 lg:ml-12">
+          <img
+            src="../images/hero-door-worker.png"
+            alt="Worker installing fire door"
+            class="rounded-lg shadow-lg h-96 object-cover w-full lg:w-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="relative z-10 -mt-20">
+      <div class="container mx-auto px-4">
+        <div
+          class="bg-white rounded-3xl shadow-xl p-8 md:p-12 lg:p-16 max-w-4xl mx-auto mb-12"
+        >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center"
+          >
+            Lock Up Industries are fully QBCC licensed to service and repair
+            existing fire doors within your building to ensure they are
+            functioning correctly and safely.
+          </h2>
+          <div class="text-gray-700 text-lg leading-relaxed space-y-6">
+            <p>
+              Fire doors can easily become non-compliant when the doors'
+              integrity has been modified or damaged. Often this is caused by
+              constant wear and tear, alterations or modifications to fire
+              doors, such as installation of non-fire rated locks, removal of
+              the door closers, installation of dead bolts and hold open
+              devices, etc. What may seem to be the smallest of modifications to
+              a fire door can have a devastating effect on the protection of
+              people and property in the case of a fire.
+            </p>
+            <p>
+              Lock Up Industries are also fully qualified and licensed builders
+              and can complete building repairs if required. This means that
+              even if you need a wall repaired or rebuilt as part of your fire
+              door repairs, we can assist.
+            </p>
+            <p>
+              Lock Up Industries also provides pressed metal door frame repairs
+              and replacements with onsite welding services provided to all
+              types of frames including stainless steel.
+            </p>
+            <p>
+              So whether you simply need a fire door repaired or replaced, or
+              there is a bit more to it, Lock Up Industries can get it done.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <script src="include.js"></script>
+  </body>
+
+  <!-- MOBILE MENU -->
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 z-100 bg-white flex flex-col items-center justify-center space-y-6 text-lg text-gray-800 md:hidden hidden"
+  >
+    <button id="close-mobile-menu" class="absolute top-4 right-4 text-3xl">
+      &times;
+    </button>
+    <a href="#" class="hover:text-blue-500">Services</a>
+    <a href="#" class="hover:text-blue-500">About Us</a>
+    <a href="#" class="hover:text-blue-500">Gallery</a>
+    <a href="#" class="hover:text-blue-500">FAQ</a>
+    <a href="#" class="btn-primary"> GET IN TOUCH </a>
+  </div>
+</html>

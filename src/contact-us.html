@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- CONTACT SECTION -->
+    <section class="flex flex-col lg:flex-row min-h-screen">
+      <div
+        class="w-full lg:w-1/2 bg-gray-100 flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="max-w-md w-full">
+          <h2
+            class="text-4xl font-bold text-gray-800 mb-8 text-center lg:text-left border-b-4 border-blue-600 inline-block pb-2"
+          >
+            Contact Us
+          </h2>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <form class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  autocomplete="name"
+                  required
+                  class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  required
+                  class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="w-full btn-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition duration-300"
+                >
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-full lg:w-1/2 bg-blue-800 text-white flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="max-w-md w-full text-center lg:text-left">
+          <h3 class="text-2xl md:text-3xl font-bold mb-6 leading-snug">
+            Better yet, call us now on
+          </h3>
+          <a href="tel:0418787247" class="btn-secondary">PH: 0418 787 247</a>
+          <p class="text-lg my-8">
+            We love our customers, so feel free to call or email us now for more
+            information on fire door compliance
+          </p>
+          <div class="space-y-4 text-lg">
+            <p>
+              <strong>Email:</strong>
+              <a
+                href="mailto:admin@lockupindustries.com.au"
+                class="hover:underline"
+                >admin@lockupindustries.com.au</a
+              >
+            </p>
+            <p><strong>Address:</strong> PO Box 516, Jimboomba, Qld, 4280</p>
+            <p><strong>QBCC Lic No:</strong> 737062</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <script src="include.js"></script>
+  </body>
+
+  <!-- MOBILE MENU -->
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 z-100 bg-white flex flex-col items-center justify-center space-y-6 text-lg text-gray-800 md:hidden hidden"
+  >
+    <button id="close-mobile-menu" class="absolute top-4 right-4 text-3xl">
+      &times;
+    </button>
+    <a href="#" class="hover:text-blue-500">Services</a>
+    <a href="#" class="hover:text-blue-500">About Us</a>
+    <a href="#" class="hover:text-blue-500">Gallery</a>
+    <a href="#" class="hover:text-blue-500">FAQ</a>
+    <a href="#" class="btn-primary"> GET IN TOUCH </a>
+  </div>
+</html>

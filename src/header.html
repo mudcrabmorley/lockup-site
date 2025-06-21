@@ -1,0 +1,103 @@
+<header
+  class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 py-3 shadow border-b bg-white"
+>
+  <div class="flex items-center space-x-6">
+    <a href="./index.html">
+      <div class="flex items-center space-x-2">
+        <img
+          src="../images/logo.png"
+          alt="Lock Up Industries Logo"
+          class="w-10 h-auto sm:w-12"
+        />
+        <h1 class="text-base font-bold tracking-wide sm:text-lg">
+          LOCK UP INDUSTRIES
+        </h1>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center space-x-6 text-gray-800">
+      <div class="relative group">
+        <button
+          class="flex items-center space-x-1 hover:text-blue-500 transition-colors duration-200"
+        >
+          <span>Services</span>
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div
+          class="absolute hidden group-hover:block bg-white shadow-lg py-2 rounded-md mt-2 w-40"
+        >
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+            >Service 1</a
+          >
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+            >Service 2</a
+          >
+        </div>
+      </div>
+      <a
+        href="about-us.html"
+        class="hover:text-blue-500 transition-colors duration-200"
+        >About Us</a
+      >
+      <a
+        href="projects.html"
+        class="hover:text-blue-500 transition-colors duration-200"
+        >Projects</a
+      >
+      <a
+        href="faq.html"
+        class="hover:text-blue-500 transition-colors duration-200"
+        >FAQ</a
+      >
+    </nav>
+  </div>
+
+  <a
+    href="./contact-us.html"
+    class="hidden md:flex items-center justify-center h-10 px-6 rounded-lg font-bold bg-yellow-200 text-blue-900 hover:bg-yellow-300 transition duration-300 text-center text-sm"
+  >
+    GET IN TOUCH
+  </a>
+
+  <button
+    id="mobile-menu-btn"
+    class="md:hidden flex items-center px-2 py-1 border border-gray-300 rounded text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+    aria-label="Open navigation menu"
+  >
+    <svg
+      class="w-7 h-7"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
+  </button>
+</header>
+
+<!-- MOBILE MENU -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center space-y-6 text-lg text-gray-800 md:hidden hidden"
+>
+  <button id="close-mobile-menu" class="absolute top-4 right-4 text-3xl">
+    &times;
+  </button>
+  <a href="#" class="hover:text-blue-500">Services</a>
+  <a href="#" class="hover:text-blue-500">About Us</a>
+  <a href="#" class="hover:text-blue-500">Gallery</a>
+  <a href="#" class="hover:text-blue-500">FAQ</a>
+  <a href="#" class="btn-primary"> GET IN TOUCH </a>
+</div>
