@@ -2,7 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <script>
+      fetch("head.html")
+        .then((res) => res.text())
+        .then((html) => document.head.insertAdjacentHTML("afterbegin", html));
+    </script>
+
     <title>Fire Door FAQ - Lock Up Industries</title>
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
