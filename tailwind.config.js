@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.html", "./*.html"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Nunito Sans"', "Nunito", "Arial", "sans-serif"],
+      },
       fontSize: {
         h1: ["64px", { lineHeight: "120px" }],
         h2: ["48px", { lineHeight: "120px" }],
