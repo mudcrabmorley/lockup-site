@@ -1,18 +1,3 @@
-// LOAD HEADER AND FOOTER
-function loadHTML(id, file, callback) {
-  fetch(file)
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById(id).innerHTML = data;
-      if (callback) setTimeout(callback, 0);
-    });
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  loadHTML("header", "header.html", setupMobileMenu);
-  loadHTML("footer", "footer.html");
-});
-
 // MOBILE MENU
 function setupMobileMenu() {
   const menuBtn = document.getElementById("mobile-menu-btn");
@@ -60,10 +45,31 @@ const heroImages = [
   "../images/cropped/IMG_3315.webp",
 ];
 
-const heroImg = document.getElementById("hero-slider-img");
-let heroIndex = 0;
+function setupHeroSlider() {
+  const heroImg = document.getElementById("hero-slider-img");
+  if (!heroImg) return; // Don't run if the image isn't found
 
-setInterval(() => {
-  heroIndex = (heroIndex + 1) % heroImages.length;
-  heroImg.src = heroImages[heroIndex];
-}, 3000);
+  let heroIndex = 0;
+  setInterval(() => {
+    heroIndex = (heroIndex + 1) % heroImages.length;
+    heroImg.src = heroImages[heroIndex];
+  }, 3000);
+}
+
+// LOAD HEADER AND FOOTER
+function loadHTML(id, file, callback) {
+  fetch(file)
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById(id).innerHTML = data;
+      if (callback) setTimeout(callback, 0);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  loadHTML("header", "header.html", function () {
+    setupMobileMenu();
+    setupHeroSlider(); // <-- Add this here
+  });
+  loadHTML("footer", "footer.html");
+});
