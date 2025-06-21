@@ -1,3 +1,4 @@
+// LOAD HEADER AND FOOTER
 function loadHTML(id, file, callback) {
   fetch(file)
     .then((response) => response.text())
@@ -12,18 +13,28 @@ document.addEventListener("DOMContentLoaded", function () {
   loadHTML("footer", "footer.html");
 });
 
+// MOBILE MENU
 function setupMobileMenu() {
   const menuBtn = document.getElementById("mobile-menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
   const closeBtn = document.getElementById("close-mobile-menu");
-  console.log({ menuBtn, mobileMenu, closeBtn });
+  const servicesBtn = document.getElementById("mobile-services-btn");
+  const servicesDropdown = document.getElementById("mobile-services-dropdown");
 
   if (menuBtn && mobileMenu && closeBtn) {
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.remove("hidden");
     });
+
     closeBtn.addEventListener("click", () => {
       mobileMenu.classList.add("hidden");
+    });
+  }
+
+  // Mobile Services Dropdown
+  if (servicesBtn && servicesDropdown) {
+    servicesBtn.addEventListener("click", () => {
+      servicesDropdown.classList.toggle("hidden");
     });
   }
 }
