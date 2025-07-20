@@ -37,3 +37,7 @@ body {
 .hero-section {
   @apply bg-blue-800 text-white pt-10 lg:pt-0 hero-height lg:pb-12;
 }
+
+img {
+  @apply brightness-200;
+}

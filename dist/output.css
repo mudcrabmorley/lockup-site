@@ -31370,6 +31370,10 @@ body {
   }
 }
 
+img {
+  --tw-brightness: brightness(2);
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
